@@ -17,7 +17,7 @@ let timeLeft = FOCUS_TIME;
 let isRunning = false;
 let currentMode = "focus"; // 'focus', 'short-break', 'long-break'
 let timerInterval = null;
-let tasks = []; // List of tasks
+
 
 // ==========================================
 // 2. DOM ELEMENTS (Selecting by ID)
@@ -37,11 +37,7 @@ const focusBtn = document.getElementById("focus-btn");
 const shortBreakBtn = document.getElementById("short-break-btn");
 const longBreakBtn = document.getElementById("long-break-btn");
 
-// Task Elements
-const taskList = document.getElementById("task-list");
-const taskInput = document.getElementById("new-task-title");
-const addTaskBtn = document.getElementById("add-task-btn");
-const taskCountNum = document.getElementById("task-count-num");
+
 
 // ==========================================
 // 3. TIMER FUNCTIONS
@@ -154,98 +150,7 @@ function setMode(mode) {
   updateTimerDisplay();
 }
 
-// ==========================================
-// 4. TASK FUNCTIONS
-// ==========================================
 
-function renderTasks() {
-  // Clear the list
-  taskList.innerHTML = "";
-
-  // Update count
-  const completedCount = tasks.filter((t) => t.isDone).length;
-  taskCountNum.textContent = completedCount + " / " + tasks.length;
-
-  if (tasks.length === 0) {
-    taskList.innerHTML = '<li class="empty-state">No active tasks</li>';
-    return;
-  }
-
-  // Loop through tasks and create HTML
-  for (let i = 0; i < tasks.length; i++) {
-    const task = tasks[i];
-
-    const li = document.createElement("li");
-    li.className = "task-item";
-    if (task.isDone) {
-      li.classList.add("completed");
-    }
-
-    li.innerHTML = `
-      <div class="task-content">
-        <button class="btn-check">
-          <span class="material-symbols-rounded">${
-            task.isDone ? "check_circle" : "radio_button_unchecked"
-          }</span>
-        </button>
-        <div class="task-title">${task.title}</div>
-      </div>
-      <div class="task-actions">
-        <button class="btn-edit">
-          <span class="material-symbols-rounded">edit</span>
-        </button>
-        <button class="btn-delete">
-          <span class="material-symbols-rounded">delete</span>
-        </button>
-      </div>
-    `;
-
-    // Add Event Listeners to the buttons inside this task
-    const checkBtn = li.querySelector(".btn-check");
-    checkBtn.addEventListener("click", () => {
-      task.isDone = !task.isDone;
-      renderTasks();
-      console.log("Task checked");
-    });
-
-    const editBtn = li.querySelector(".btn-edit");
-    editBtn.addEventListener("click", () => {
-      const newTitle = prompt("Edit task title:", task.title);
-      if (newTitle) {
-        task.title = newTitle;
-        renderTasks();
-        console.log("Task edited");
-      }
-    });
-
-    const deleteBtn = li.querySelector(".btn-delete");
-    deleteBtn.addEventListener("click", () => {
-      tasks.splice(i, 1); // Remove task at index i
-      renderTasks();
-      console.log("Task deleted");
-    });
-
-    taskList.appendChild(li);
-  }
-}
-
-function addTask() {
-  const title = taskInput.value;
-  if (title === "") {
-    alert("Please enter a task title");
-    return;
-  }
-
-  const newTask = {
-    title: title,
-    isDone: false,
-  };
-
-  tasks.push(newTask);
-  taskInput.value = "";
-  console.log("Task added");
-  renderTasks();
-}
 
 // ==========================================
 // 5. EVENT LISTENERS
@@ -269,14 +174,8 @@ longBreakBtn.addEventListener("click", () => {
   console.log("Long break mode activated");
 });
 
-addTaskBtn.addEventListener("click", addTask);
 
-taskInput.addEventListener("keypress", (event) => {
-  if (event.key === "Enter") {
-    addTask();
-  }
-});
 
 // Initialize
 updateTimerDisplay();
-renderTasks();
+
