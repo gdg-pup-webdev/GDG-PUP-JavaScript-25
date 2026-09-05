@@ -1,10 +1,16 @@
 # Welcome to the Webverse Vol. 2: JavaScript & DOM Manipulation
 
+[![Status: Teaching](https://img.shields.io/badge/Status-Teaching-blue)](docs/state.md)
+[![Stack: JavaScript](https://img.shields.io/badge/Stack-JavaScript-black)](#about)
+[![FMD philosophy: 1.31.0](https://img.shields.io/badge/FMD%20philosophy-1.31.0-blue)](AGENTS.md)
+
+
 Study jam materials for building a **Pomodoro Timer** with HTML, CSS, and JavaScript DOM APIs. For beginners and anyone refreshing vanilla JS skills at GDG on Campus PUP.
 
 ## Table of Contents
 
 - [About](#about)
+- [Start here](#start-here)
 - [Repository Structure](#repository-structure)
 - [Technologies Used](#technologies-used)
 - [Quick start](#quick-start)
@@ -15,6 +21,12 @@ Study jam materials for building a **Pomodoro Timer** with HTML, CSS, and JavaSc
 ## About
 
 This repository holds the live coding project and post-jam challenge for Webverse Vol. 2. Use the finished Pomodoro Timer to review the session, then extend it in the Post Jam Activity with task management and bonus features.
+
+## Start here
+
+- **Humans:** this README, then [docs/state.md](docs/state.md)
+- **Agents:** [AGENTS.md](AGENTS.md) (state → index → FLAGS)
+- **Contributors:** table below
 
 ## Repository Structure
 
@@ -92,10 +104,12 @@ npx serve .
 
 ## Contributors
 
-This project is made possible by the GDG PUP community:
+This project is made possible by the GDG PUP community.
 
-| Role | Name |
-| --- | --- |
-| Development | [Gerald Berongoy](https://www.linkedin.com/in/geraldberongoy) - Senior Backend Developer / Web Development Learning Head |
-| Development | [Keith Justine A. Virgenes](https://www.linkedin.com/in/keith-justine-virgenes-749225302) - Backend Developer / QA |
-| Development | Randall Graida |
+| Name | Role | GitHub |
+| --- | --- | --- |
+| [Carlos Jerico Dela Torre](https://www.linkedin.com/in/delatorrecj) | Chief Technology Officer (2025-2026) | [@delatorrecj](https://github.com/delatorrecj) |
+| [Gerald Berongoy](https://www.linkedin.com/in/geraldberongoy) | Senior Backend Developer / Web Development Learning Head | [@geraldsberongoy](https://github.com/geraldsberongoy) |
+| [Keith Justine A. Virgenes](https://www.linkedin.com/in/keith-justine-virgenes-749225302) | Backend Developer / QA | [@jhonkeithman123](https://github.com/jhonkeithman123) |
+| Randall Graida | Development |  |
+
