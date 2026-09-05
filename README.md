@@ -1,16 +1,26 @@
-# Welcome to the Webverse Vol. 2: JavaScript & DOM Manipulation 
+# Welcome to the Webverse Vol. 2: JavaScript & DOM Manipulation
 
-This repository contains the materials and activities for our study jam. Whether you're a beginner or looking to refresh your skills, this repo will guide you through building your first **Pomodoro Timer** web application.
+Study jam materials for building a **Pomodoro Timer** with HTML, CSS, and JavaScript DOM APIs. For beginners and anyone refreshing vanilla JS skills at GDG on Campus PUP.
 
----
+## Table of Contents
 
-## 📂 Repository Structure
+- [About](#about)
+- [Repository Structure](#repository-structure)
+- [Technologies Used](#technologies-used)
+- [Quick start](#quick-start)
+- [What You'll Learn](#what-youll-learn)
+- [Documentation](#documentation)
+- [Contributors](#contributors)
 
-Explore the contents of this repository below. Click on the folder names to navigate!
+## About
 
----
+This repository holds the live coding project and post-jam challenge for Webverse Vol. 2. Use the finished Pomodoro Timer to review the session, then extend it in the Post Jam Activity with task management and bonus features.
 
-### 1. 📁 [Live Project](./Live%20Project)
+## Repository Structure
+
+Explore the contents of this repository below. Click on the folder names to navigate.
+
+### 1. [Live Project](./Live%20Project)
 
 This folder contains the **Finished Code** we used during the live coding session.
 
@@ -19,11 +29,9 @@ This folder contains the **Finished Code** we used during the live coding sessio
 | **Use this if:** | You want to review what we built during the event or understand the complete Pomodoro Timer. |
 | **Contains:** | `pomodoro.html`, `main.js`, `pomodoro.css`, and a comprehensive guide explaining each function. |
 
----
+### 2. [Post Jam Activity](./Post%20Jam%20Activity)
 
-### 2. 📁 [Post Jam Activity](./Post%20Jam%20Activity)
-
-This is your **Challenge!** 🎯
+This is your **Challenge!**
 
 | | |
 |---|---|
@@ -32,22 +40,17 @@ This is your **Challenge!** 🎯
 | **Contains:** | A modified boilerplate with empty functions and instructions for the activity. |
 
 #### Your Challenges:
-- ✅ **Required:** Implement `addTask()`, `deleteTask()`, and `updateTaskCount()` functions
-- 🌟 **Bonus:** Choose from 10+ feature ideas like background music, keyboard shortcuts, dark mode, and more!
 
----
+- **Required:** Implement `addTask()`, `deleteTask()`, and `updateTaskCount()` functions
+- **Bonus:** Choose from 10+ feature ideas like background music, keyboard shortcuts, dark mode, and more!
 
-### 3. 📁 [Assets](./Assets)
+### 3. [Assets](./Assets)
 
 Contains images and resources used in the guides and tutorials.
 
----
-
 > **Note:** You can ignore the `.github` folder. It contains configuration files for the repository template and isn't part of the workshop.
 
----
-
-## 🛠️ Technologies Used
+## Technologies Used
 
 | Technology | Purpose |
 |------------|---------|
@@ -55,9 +58,7 @@ Contains images and resources used in the guides and tutorials.
 | **CSS3** | Styling with glassmorphism design |
 | **JavaScript (ES6+)** | Timer logic, DOM manipulation, and interactivity |
 
----
-
-## 🚀 Getting Started
+## Quick start
 
 1. **Clone or Download** this repository
 2. **Navigate** to the `Live Project` folder to see the completed code
@@ -70,36 +71,24 @@ cd "Live Project"
 npx serve .
 ```
 
----
+## What You'll Learn
 
-## � What You'll Learn
-
-- ✅ Variables and Constants (`const`, `let`)
-- ✅ DOM Selection (`getElementById`)
-- ✅ Functions and Event Listeners
-- ✅ Timers (`setInterval`, `clearInterval`)
-- ✅ String Methods (`padStart`)
-- ✅ CSS Custom Properties manipulation
-- ✅ Conditional Logic and State Management
-
----
-
-<div align="center">
-
-**Made with ❤️ by GDG PUP Web Dev Team**
-
-*Happy Coding! 🚀*
-
-</div>
-
----
+- Variables and Constants (`const`, `let`)
+- DOM Selection (`getElementById`)
+- Functions and Event Listeners
+- Timers (`setInterval`, `clearInterval`)
+- String Methods (`padStart`)
+- CSS Custom Properties manipulation
+- Conditional Logic and State Management
 
 ## Documentation
 
-- [docs/state.md](docs/state.md) - Teaching position / handover
-- [docs/index.md](docs/index.md) - Doc inventory
-- [FLAGS.md](FLAGS.md) - Improvement register
-- [AGENTS.md](AGENTS.md) - Agent load order
+| Doc | Purpose |
+|-----|---------|
+| [State](docs/state.md) | Teaching position / handover |
+| [Index](docs/index.md) | Doc inventory |
+| [FLAGS](FLAGS.md) | Improvement register |
+| [AGENTS](AGENTS.md) | Agent load order |
 
 ## Contributors
 
